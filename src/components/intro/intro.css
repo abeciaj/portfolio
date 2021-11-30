@@ -78,3 +78,10 @@
     top: 0;
     right: 0;
 }
+
+.i-scroll{
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    position: absolute;
+}
