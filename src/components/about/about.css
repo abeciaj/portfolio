@@ -37,3 +37,16 @@
     height: 100%;
     object-fit: cover;
 }
+
+.a-title{
+    font-weight: 400;
+    color: #555;
+}
+
+.a-sub{
+    margin: 20px 0px;
+}
+
+.a-desc{
+    font-weight: 300;
+}
