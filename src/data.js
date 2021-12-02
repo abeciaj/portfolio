@@ -1,7 +1,7 @@
 export const projects = [
     {
       id: 1,
-      img: "https://images.pexels.com/photos/9584136/pexels-photo-9584136.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      img: "https://images.pexels.com/photos/10340986/pexels-photo-10340986.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
       link: "https://www.pexels.com/",
     },
     {
