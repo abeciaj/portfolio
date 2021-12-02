@@ -2,13 +2,24 @@ import "./contact.css"
 import Phone from "../../img/phone.png"
 import Email from "../../img/email.png"
 import Address from "../../img/address.png"
-import { useRef } from "react"
+import { useRef, useState } from "react"
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
-    const formRef = useRef()
+    const formRef = useRef();
     const handleSubmit = (e)=>{
-        e.preventDefault()
-        
+        e.preventDefault();
+        emailjs
+            .sendForm(
+                'service_vifaw7u', 
+                'template_2na7v4y', 
+                formRef.current, 
+                'user_3j5HthlrNp4SRybNtcbQk')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     }
     return (
         <div className="c">
