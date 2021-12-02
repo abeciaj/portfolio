@@ -7,6 +7,7 @@ import emailjs from 'emailjs-com';
 
 const Contact = () => {
     const formRef = useRef();
+    const [done, setdone] = useState(false);
     const handleSubmit = (e)=>{
         e.preventDefault();
         emailjs
@@ -17,6 +18,7 @@ const Contact = () => {
                 'user_3j5HthlrNp4SRybNtcbQk')
             .then((result) => {
                 console.log(result.text);
+                setdone(true)
             }, (error) => {
                 console.log(error.text);
             });
@@ -83,6 +85,7 @@ const Contact = () => {
                         <button>
                             Submit
                         </button>
+                        {done && "Thank you!"}
                     </form>
                 </div>
             </div>
